@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Handlee&display=swap') ;
+
+.search-btn {
+  background-color: rgb(0, 0, 0, 0.45);
+  border: none;
+  border-radius: 35px;
+  color: white;
+  font-family: Comic Neue , cursive;
+  font-size: 20px;
+  font-weight: 700;
+  height: 70px;
+  width: 70px;
+}
+
+.searchbar-container {
+  align-items: center;
+  background-color: #fef0c8c1;
+  border-radius: 0 0 20px 20px;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 5px;
+  padding-top: 50px;
+  position: fixed;
+  top: 0;
+  width: inherit;
+  z-index: 0;
+}
+
+.input-text {
+  border: none;
+  border-radius: 15px;
+  height: 40px;
+  padding-left: 10px;
+}
+
+.inputs-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 270px;
+}
+
+.radios-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5px;
+}
+
+.radio-button {
+  align-items: center;
+  border: none;
+  display: flex;
+  font-family: Handlee , cursive;
+  font-size: 16px;
+  font-style: normal;
+  margin-right: 3px;
+}
+
+
+.label-radio {
+  align-items: baseline;
+  color: black;
+  display: flex;
+  font-family: Handlee , cursive;
+  font-size: 16px;
+}

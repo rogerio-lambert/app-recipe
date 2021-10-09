@@ -1,0 +1,28 @@
+import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import profileIcon from '../images/profileIcon.svg';
+import '../styleSheets/Header.css';
+
+function HeaderRecipes() {
+  const location = useLocation();
+  // fonte: https://flexiple.com/javascript-capitalize-first-letter/#:~:text=To%20capitalize%20the%20first%20character,()%20function%20to%20capitalize%20it.
+
+  return (
+    <header className="Header">
+      <Link to="/perfil" className="container-icon">
+        <img
+          data-testid="profile-top-btn"
+          src={ profileIcon }
+          alt="profile icon"
+          className="explore-icon"
+        />
+      </Link>
+      <h3 data-testid="page-title" className="title">
+        { location.pathname.includes('feitas') ? 'Receitas Feitas' : 'Receitas Favoritas'}
+      </h3>
+      <div className="explore-icon" />
+    </header>
+  );
+}
+
+export default HeaderRecipes;
